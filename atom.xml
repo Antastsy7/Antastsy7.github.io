@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Slakijng</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-06-26T13:30:57.992Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Slakijng</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>What Immersive Is</title>
+    <link href="http://example.com/2021/08/13/2021-8-13-What-Immersive-Is/"/>
+    <id>http://example.com/2021/08/13/2021-8-13-What-Immersive-Is/</id>
+    <published>2021-08-13T07:00:30.000Z</published>
+    <updated>2022-06-26T13:30:57.992Z</updated>
+    
+    
+    <summary type="html">沉浸感(immersion)是一个非常模糊的概念，每每到分析时都会被滥用。这里我们参照Gordon Calleja给出的模型，以后在描述沉浸感的时候可以落实到具体哪一种。</summary>
+    
+    
+    
+    <category term="Comments" scheme="http://example.com/categories/Comments/"/>
+    
+    
+    <category term="Game Design, Psychology" scheme="http://example.com/tags/Game-Design-Psychology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>黑暗之魂叙事的取舍</title>
+    <link href="http://example.com/2021/08/06/2021-8-6-Narrative-Approach-of-Dark-Souls/"/>
+    <id>http://example.com/2021/08/06/2021-8-6-Narrative-Approach-of-Dark-Souls/</id>
+    <published>2021-08-06T13:14:50.000Z</published>
+    <updated>2022-06-26T10:41:19.502Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;黑暗之魂作为上个十年最具影响力的游戏之一，除了高难度、高惩罚&lt;del&gt;和恋爱模拟要素&lt;/del&gt;为人熟知以外，其隐晦、碎片化的叙事风格也广为人知，并诞生了一批&lt;del&gt;蹭热度&lt;/del&gt;的魂学家孜孜不倦地发掘黑暗之魂的故事。这次趁着探讨非线性叙事的机会，试着探究一下黑魂的这</summary>
+        
+      
+    
+    
+    
+    <category term="Comments" scheme="http://example.com/categories/Comments/"/>
+    
+    
+    <category term="DarkSouls" scheme="http://example.com/tags/DarkSouls/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The Illusion of Choice</title>
+    <link href="http://example.com/2021/06/22/2021-6-22-The-Illusion-of-Choice/"/>
+    <id>http://example.com/2021/06/22/2021-6-22-The-Illusion-of-Choice/</id>
+    <published>2021-06-22T05:01:30.000Z</published>
+    <updated>2022-06-26T13:32:15.610Z</updated>
+    
+    
+    <summary type="html">游戏中的选择</summary>
+    
+    
+    
+    <category term="Comments" scheme="http://example.com/categories/Comments/"/>
+    
+    
+    <category term="GDC" scheme="http://example.com/tags/GDC/"/>
+    
+    <category term="Game Design" scheme="http://example.com/tags/Game-Design/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>骑士亚瓦与魔女佳丽的爱情</title>
+    <link href="http://example.com/2021/06/14/2021-6-14-Love-Story-of-Alva-and-Zullie/"/>
+    <id>http://example.com/2021/06/14/2021-6-14-Love-Story-of-Alva-and-Zullie/</id>
+    <published>2021-06-14T15:31:30.000Z</published>
+    <updated>2022-06-26T01:35:05.339Z</updated>
+    
+    
+    <summary type="html">直至今日，吟游诗人仍会唱诵那段流浪骑士的旅程，以及关于圣女、魔女的故事——虽然那多以悲剧收场。</summary>
+    
+    
+    
+    <category term="Tales" scheme="http://example.com/categories/Tales/"/>
+    
+    
+    <category term="DarkSouls" scheme="http://example.com/tags/DarkSouls/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Why Dark Souls Is The &#39;Ikea&#39; Of Games</title>
+    <link href="http://example.com/2021/06/14/2021-6-18-Why-Dark-Souls-Is-The-Ikea-Of-Games/"/>
+    <id>http://example.com/2021/06/14/2021-6-18-Why-Dark-Souls-Is-The-Ikea-Of-Games/</id>
+    <published>2021-06-14T05:04:30.000Z</published>
+    <updated>2022-06-26T13:32:02.617Z</updated>
+    
+    
+    <summary type="html">从商业模式的角度探讨黑魂的游戏设计</summary>
+    
+    
+    
+    <category term="Comments" scheme="http://example.com/categories/Comments/"/>
+    
+    
+    <category term="DarkSouls" scheme="http://example.com/tags/DarkSouls/"/>
+    
+    <category term="GDC" scheme="http://example.com/tags/GDC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>死亡搁浅（施工中）</title>
+    <link href="http://example.com/2021/04/25/2021-4-25-Death-Stranding-Comments/"/>
+    <id>http://example.com/2021/04/25/2021-4-25-Death-Stranding-Comments/</id>
+    <published>2021-04-25T14:12:10.000Z</published>
+    <updated>2021-10-07T04:40:51.941Z</updated>
+    
+    
+    <summary type="html">搁浅了数不清多少周了，终于上岸了。</summary>
+    
+    
+    
+    <category term="Comments" scheme="http://example.com/categories/Comments/"/>
+    
+    
+    <category term="DeathStranding" scheme="http://example.com/tags/DeathStranding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Echolocation</title>
+    <link href="http://example.com/2020/04/22/2020-4-22-Ecolocation/"/>
+    <id>http://example.com/2020/04/22/2020-4-22-Ecolocation/</id>
+    <published>2020-04-21T16:00:00.000Z</published>
+    <updated>2022-06-26T13:06:07.981Z</updated>
+    
+    
+    <summary type="html">What is it like to be a bat?</summary>
+    
+    
+    
+    <category term="Portfolio" scheme="http://example.com/categories/Portfolio/"/>
+    
+    
+    <category term="VR" scheme="http://example.com/tags/VR/"/>
+    
+    <category term="UE4" scheme="http://example.com/tags/UE4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kinect Kamehameha</title>
+    <link href="http://example.com/2020/03/05/2020-3-5-Kinect-KamehameHa/"/>
+    <id>http://example.com/2020/03/05/2020-3-5-Kinect-KamehameHa/</id>
+    <published>2020-03-04T16:00:00.000Z</published>
+    <updated>2022-06-26T13:14:22.445Z</updated>
+    
+    
+    <summary type="html">基于Kinect的体感demo项目</summary>
+    
+    
+    
+    <category term="Portfolio" scheme="http://example.com/categories/Portfolio/"/>
+    
+    
+    <category term="Puzzle" scheme="http://example.com/tags/Puzzle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Road Threader</title>
+    <link href="http://example.com/2019/09/10/2019-9-10-Road-Threader/"/>
+    <id>http://example.com/2019/09/10/2019-9-10-Road-Threader/</id>
+    <published>2019-09-09T16:00:00.000Z</published>
+    <updated>2022-06-26T12:56:54.026Z</updated>
+    
+    
+    <summary type="html">逃离交通拥堵的手游</summary>
+    
+    
+    
+    <category term="Portfolio" scheme="http://example.com/categories/Portfolio/"/>
+    
+    
+    <category term="Puzzle" scheme="http://example.com/tags/Puzzle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>On the Way Home</title>
+    <link href="http://example.com/2019/02/10/2019-2-10-On-The-Way-Home/"/>
+    <id>http://example.com/2019/02/10/2019-2-10-On-The-Way-Home/</id>
+    <published>2019-02-09T16:00:00.000Z</published>
+    <updated>2022-06-26T13:09:45.852Z</updated>
+    
+    
+    <summary type="html">2019 Global Game Jam的解谜游戏</summary>
+    
+    
+    
+    <category term="Portfolio" scheme="http://example.com/categories/Portfolio/"/>
+    
+    
+    <category term="Puzzle" scheme="http://example.com/tags/Puzzle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Catering</title>
+    <link href="http://example.com/2018/12/10/2018-12-10-Catering/"/>
+    <id>http://example.com/2018/12/10/2018-12-10-Catering/</id>
+    <published>2018-12-09T16:00:00.000Z</published>
+    <updated>2022-06-26T13:21:29.914Z</updated>
+    
+    
+    <summary type="html">类似卡坦岛的模拟经营游戏</summary>
+    
+    
+    
+    <category term="Portfolio" scheme="http://example.com/categories/Portfolio/"/>
+    
+    
+    <category term="Puzzle" scheme="http://example.com/tags/Puzzle/"/>
+    
+  </entry>
+  
+</feed>
