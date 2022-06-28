@@ -44,7 +44,12 @@ insight:
 Portfolio:
     zh: 作品集
     en: Portfolio
-    img: /images/BackGround_Night.jpeg
+    img: /assets/img/common/background_eldenring.jpg
+
+Article:
+    zh: 文章
+    en: Articles
+    img: /assets/img/common/background_tocs.jpg
 
 技术:
     zh: 野生技术协会

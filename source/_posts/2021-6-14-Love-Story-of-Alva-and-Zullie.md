@@ -1,7 +1,7 @@
 ---
 title: 骑士亚瓦与魔女佳丽的爱情
 date: 2021-6-14 23:31:30
-categories: Tales
+categories: Article
 tags: 
 - DarkSouls
 photos: /assets/img/common/darksouls2_alvaandzullie.jpg

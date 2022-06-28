@@ -10,14 +10,9 @@ photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/music.jpg
 <meting-js
   server="netease"
   type="playlist"
-  id="2731690811"
-  mutex="true">
+  id="6639107565"
+  mutex="true"
+  >
 </meting-js>
 
-<meting-js
-  server="netease"
-  type="playlist"
-  id="419239189"
-  mutex="true">
-</meting-js>
 {% endraw %}

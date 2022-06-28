@@ -1,7 +1,7 @@
 ---
 title: 黑暗之魂叙事的取舍
 date: 2021-8-6 21:14:50
-categories: Comments
+categories: Article
 tags: 
 - DarkSouls
 comments: false

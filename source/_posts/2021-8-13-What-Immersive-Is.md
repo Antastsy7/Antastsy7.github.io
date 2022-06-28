@@ -1,13 +1,12 @@
 ---
 title: What Immersive Is
 date: 2021-8-13 15:00:30
-categories: Comments
+categories: Article
 tags: 
 - Game Design, Psychology
 photos: /assets/img/common/immerse.jpg
 toc: false
 only:
-- home
 - category
 - tag
 comments: true

@@ -1,7 +1,7 @@
 ---
 title: The Illusion of Choice
 date: 2021-6-22 13:01:30
-categories: Comments
+categories: Article
 tags: 
 - Game Design
 - GDC

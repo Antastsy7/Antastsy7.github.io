@@ -1,7 +1,7 @@
 ---
 title: Why Dark Souls Is The 'Ikea' Of Games
 date: 2021-6-14 13:04:30
-categories: Comments
+categories: Article
 tags: 
 - DarkSouls
 - GDC

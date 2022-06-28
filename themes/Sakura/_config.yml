@@ -11,14 +11,15 @@ pjax: 1
 # 1开启
 mathjax: 0
 
-notice: 懒人维护中
+notice: 广告位招租
 lazyloadImg: 
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
   作品集: { path: /categories/Portfolio/, fa: fa-photo }
-  文章: { path: /archives/, fa: fa-archive faa-shake }
-#  歌单: { path: /music/, fa: fa-headphones }
+  文章: { path: /categories/Article/, fa: fa-book }
+  歌单: { path: /music/, fa: fa-headphones }
+  # 关于: {path: /about/, fa: fa-meetup}
 
 
 # Home page sort type: -1: newer first，1: older first.
@@ -34,9 +35,9 @@ bgclass: filter-dot
 
 # startdash url, title, desc img
 startdash: 
-  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
-  - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: /img/startdash/bilibili.jpg}
-  - {url: /posts/2020-4-22-Ecolocation, title: hojun的万事屋, desc: 技术服务, img: /img/startdash/wangshiwu.jpg}
+  - {url: /2020/04/22/2020-4-22-Ecolocation/, title: Echolocation, img: /assets/img/common/echolocation_0.gif}
+  - {url: /2019/02/10/2019-2-10-On-The-Way-Home/, title: On the Way Home, img: /assets/img/common/On_the_way_home_0.gif}
+  - {url: /2021/08/06/2021-8-6-Narrative-Approach-of-Dark-Souls/, title: 黑暗之魂叙事的取舍, img: /assets/img/common/darksousl2_faraamknight.jpg}
 
 
 
@@ -44,8 +45,8 @@ startdash:
 siteBuildingTime: 07/17/2018
 
 #social  url, img PC端配置
-# social:
-#   github: {url: https://github.com/yremp, img: /img/startdash/bilibili.jpg}
+social:
+   github: {url: https://github.com/Antastsy7, img: /assets/img/common/github.png}
 #   wangyiyun: {url: https://music.163.com/, img: /img/social/wangyiyun.png}
 #   zhihu: {url: https://www.zhihu.com/, img: /img/social/zhihu.png}
 #   qq: {url: /#, qrcode: /img/custom/qq.png, img: /img/social/qq.png}
@@ -53,7 +54,7 @@ siteBuildingTime: 07/17/2018
 
 #social  url, img 移动端配置
 msocial:
-  github: {url: http://github.com/honjun, fa: fa-github, color: 333}
+  github: {url: https://github.com/Antastsy7, fa: fa-github, color: 333}
   weibo: {url: http://weibo.com/mashirozx?is_all=1, fa: fa-weibo, color: dd4b39}
   qq: {url: https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
 
