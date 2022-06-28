@@ -18,7 +18,7 @@ menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
   作品集: { path: /categories/Portfolio/, fa: fa-photo }
   文章: { path: /archives/, fa: fa-archive faa-shake }
-  歌单: { path: /music/, fa: fa-headphones }
+#  歌单: { path: /music/, fa: fa-headphones }
 
 
 # Home page sort type: -1: newer first，1: older first.
