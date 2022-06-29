@@ -4,15 +4,15 @@ date: 2021-6-14 23:31:30
 categories: Article
 tags: 
 - DarkSouls
+- Tales
 photos: /assets/img/common/darksouls2_alvaandzullie.jpg
 avatar: /assets/img/common/avatar.jpg
-toc: false
 only:
 - home
 - category
 - tag
 comments: true
-excerpt: 直至今日，吟游诗人仍会唱诵那段流浪骑士的旅程，以及关于圣女、魔女的故事——虽然那多以悲剧收场。
+description: 直至今日，吟游诗人仍会唱诵那段流浪骑士的旅程，以及关于圣女、魔女的故事——虽然那多以悲剧收场。
 
 typora-root-url: ..
 ---

@@ -1,14 +1,13 @@
 ---
-title: What Immersive Is
+title: 当我们在说沉浸感时，我们到底说的是什么？
 date: 2021-8-13 15:00:30
 categories: Article
 tags: 
-- Game Design, Psychology
+- Game Design
+- Psychology
 photos: /assets/img/common/immerse.jpg
+avatar: /assets/img/common/avatar.jpg
 toc: false
-only:
-- category
-- tag
 comments: true
 excerpt: 沉浸感(immersion)是一个非常模糊的概念，每每到分析时都会被滥用。这里我们参照Gordon Calleja给出的模型，以后在描述沉浸感的时候可以落实到具体哪一种。
 

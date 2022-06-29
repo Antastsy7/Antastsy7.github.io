@@ -5,6 +5,7 @@ date: 2019-02-10
 keywords: 
 tags:
 - Puzzle
+- Unity
 categories: Portfolio
 description: 2019 Global Game Jam的解谜游戏
 photos: /assets/img/common/On_the_way_home_0.gif
@@ -31,6 +32,8 @@ avatar: /assets/img/common/avatar.jpg
 为了营造想家的氛围，我们设定的背景故事是：主角在离家很远的地方，他想坐火车回家，但是却遇到了种种问题而无法顺利回程。玩家的目的就是解开一路上的谜题，帮助我们的主角顺利回家，而解谜的关键就在于语言上。
 
 在刚进入游戏时，玩家就能看到一个特殊的开始界面——一个悬挂着的字母T和缺少T的start按键，引导玩家将那个悬浮的T拖动到start上，同时传递给玩家游戏的主要玩法。
+
+![OnTheWayHome](../assets/img/2019-2-10-On-The-Way-Home/OnTheWayHome.png)
 
 我们一共设计了三个场景，每个场景中标题中的字符都可以变成不同的对象，例如“O”可以变成车轮，“N”可以变成一扇门。玩家需要找到正确的字符所对应的功能，来完成每一个场景的谜题。
 

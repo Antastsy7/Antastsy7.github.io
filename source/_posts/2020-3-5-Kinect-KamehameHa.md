@@ -5,7 +5,8 @@ date: 2020-03-05
 keywords: 
 tags:
 - Puzzle
-categories: Portfolio
+- Unity
+categories: Demo
 description: 基于Kinect的体感demo项目
 photos: /assets/img/common/kamehameha_0.gif
 avatar: /assets/img/common/avatar.jpg
