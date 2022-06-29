@@ -107,9 +107,9 @@
     <category term="Article" scheme="http://example.com/categories/Article/"/>
     
     
-    <category term="DarkSouls" scheme="http://example.com/tags/DarkSouls/"/>
-    
     <category term="Comments" scheme="http://example.com/tags/Comments/"/>
+    
+    <category term="DarkSouls" scheme="http://example.com/tags/DarkSouls/"/>
     
   </entry>
   
