@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Category: Tools | Slakijng</title>
+  <title itemprop="name">AI编辑器 | Slakijng</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -195,201 +195,43 @@
   </div>
 </header>
 
+        <div class="pattern-center-blank"></div>
+  
+    <div class="pattern-center ">
+      <div class="pattern-attachment-img">
+        <img src="" data-src="/assets/img/common/ai.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+      </div>
+      <header class="pattern-header ">
+        <h1 class="entry-title">
+        </h1>
+      </header>
+    </div>
+  
+  <div id="content" class="site-content">
+    <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
+      <p>这是我们项目之前用于编辑AI的工具，用wpf开发。编辑器版本较为古老缺少迭代，使用的体量却越来越大(AI节点就有几百个，AI树更是有几千多个)，因此对编辑器进行了较大幅的迭代优化。</p>
+<h4 id="结构优化"><a href="#结构优化" class="headerlink" title="结构优化"></a>结构优化</h4><p>左侧行为树列表因为treeview的问题，光是展开所有人的树就要等半天（但是又不能不加载），后续搜索关键字基本是一字一卡。</p>
+<p>由于我们的树采用的是 protobuf ，是无法直接对里面的属性进行set的，加上proto只存了一些必要属性，为了方便统一管理和数据绑定，我在编辑器内加了一个抽象层。我把这个抽象层序列化为json，并在加载之后缓存下来，之后就不需要再次IO开销。同时我也给这个抽象层加了许多的属性，比如记录这棵树被其他树的引用情况，树的标签，注释，svn状态等等。类似的，我给AI节点列表也加了代理层，并且记录每个AI节点出现在哪个AI树中，方便新同学复用老节点时可以快速找到参考。<br>同时我还给编辑器加入了一些易用性强的模块，比如最近打开，置顶，查看树的层级结构，给树加上节点顺序标注等。</p>
+<h4 id="调试优化"><a href="#调试优化" class="headerlink" title="调试优化"></a>调试优化</h4><p>我们的策划之前调试AI是靠看log输出的，调试AI的难度不逊于调试代码，非常痛苦。由于调试时输出的log是本身是结构化的，我的思路是在游戏客户端加一个hook去捕获这些log，并将其发送给AI编辑器，由AI编辑器对其进行解析，最后可视化的展示在当前的行为树中。由于我们的命令行已经支持了“连续调试”“执行一步”这些接口（实际上是gm指令）只要我建立起了AI编辑器和游戏客户端的通信，就可以从AI编辑器主动发起并控制调试过程。AI编辑器可以把这些收到的log存到一个列表中，策划就可以手动拖动进度条查看AI的运行结果，方便策划追踪整个树的执行情况。</p>
+<h4 id="模块参数"><a href="#模块参数" class="headerlink" title="模块参数"></a>模块参数</h4><p>由于AI使用的越来越多，AI树的体量也越来越大，我们并不希望每当有新的怪物需求时就建一颗新的树，而是希望尽可能去复用老的树结构，所以我们有了将行为树参数化、模块化的想法。即写一个非常通用的行为树，通过参数来控制每个具体节点的行为，以复用一个结构满足不同场景的需求。我们搭配设计了模板树和模块参数，通过参数和树的组合来实现复用。我们在模块参数中定义了一系列变量，用这些变量去绑定原有行为树的某些参数，这样策划想复用的时候只需要在现有模块参数的基础上改变变量取值，而不用一个个参数去改了。</p>
+<h4 id="项目复用"><a href="#项目复用" class="headerlink" title="项目复用"></a>项目复用</h4><p>只要底层结构相同就可以复用（即最后生成的AI树都是用protobuf规定的）项目组可以定制自己需要的AI节点和一些配置文件。我们组的AI编辑器也顺利推广到了隔壁的S3项目组。</p>
+
+      <!-- .entry-content -->
       
-<div class="pattern-center-blank"></div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img data-src="Tools.img" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
-  </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title">Tools.zh</h1>
-    <span class="cat-des">
-      <p>Tools.en</p>
-    </span>
-  </header>
+      <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+      <footer class="post-footer">
+        <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+        <div class="post-tags">
+        </div>
+        <div class="post-share">
+          <div class="social-share sharehidden share-component"></div>
+          <i class="iconfont show-share icon-forward"></i>
+        </div>
+      </footer><!-- .entry-footer -->
+    </article>
+      <!-- #post-## -->
+  </div><!-- #primary -->
 </div>
-<div id="content" class="site-content">
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-      <span> 出版时间: <span>
-
-  <!-- 首页默认取最最新文章集 -->
-  
-    
-<article  class="post post-list-thumb post-list-thumb-left"  class="post post-list-thumb" itemscope="" itemtype="https://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/12/01/2021-12-1-QData-Editor/">
-      <img class="lazyload" onerror="imgError(this,3)" src="" data-src="/assets/img/common/qdata.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-12-1 13:12</div>
-      <a href="/2021/12/01/2021-12-1-QData-Editor/" class="post-title">
-        <h3>服务器数据实时查询修改工具</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/wpf/">wpf<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/Tools/">Tools</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p></p>
-        <div class="post-bottom">
-          <a href="/2021/12/01/2021-12-1-QData-Editor/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-    
-<article  class="post post-list-thumb" itemscope="" itemtype="https://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/08/20/2021-8-20-AITemplateEditor/">
-      <img class="lazyload" onerror="imgError(this,3)" src="" data-src="/assets/img/common/ai.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-8-20 12:08</div>
-      <a href="/2021/08/20/2021-8-20-AITemplateEditor/" class="post-title">
-        <h3>AI编辑器</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/Tools/">Tools</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p></p>
-        <div class="post-bottom">
-          <a href="/2021/08/20/2021-8-20-AITemplateEditor/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-
-
-      <div class="clearer">
-      </div>
-    </main>
-    <!--  -->
-    
-  </div>
-</div>
-
-<!-- <span> 出版时间: <span>
-
-  
-    
-<article  class="post post-list-thumb post-list-thumb-left"  class="post post-list-thumb" itemscope="" itemtype="https://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/12/01/2021-12-1-QData-Editor/">
-      <img class="lazyload" onerror="imgError(this,3)" src="" data-src="/assets/img/common/qdata.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-12-1 13:12</div>
-      <a href="/2021/12/01/2021-12-1-QData-Editor/" class="post-title">
-        <h3>服务器数据实时查询修改工具</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/wpf/">wpf<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/Tools/">Tools</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p></p>
-        <div class="post-bottom">
-          <a href="/2021/12/01/2021-12-1-QData-Editor/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-    
-<article  class="post post-list-thumb" itemscope="" itemtype="https://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/08/20/2021-8-20-AITemplateEditor/">
-      <img class="lazyload" onerror="imgError(this,3)" src="" data-src="/assets/img/common/ai.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-8-20 12:08</div>
-      <a href="/2021/08/20/2021-8-20-AITemplateEditor/" class="post-title">
-        <h3>AI编辑器</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/Tools/">Tools</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p></p>
-        <div class="post-bottom">
-          <a href="/2021/08/20/2021-8-20-AITemplateEditor/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-
- -->
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>

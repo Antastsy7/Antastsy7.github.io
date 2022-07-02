@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-06-29T14:45:04.348Z</updated>
+  <updated>2022-06-29T12:51:18.419Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,55 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>服务器数据实时查询修改工具</title>
-    <link href="http://example.com/2021/12/01/2021-12-1-QData-Editor/"/>
-    <id>http://example.com/2021/12/01/2021-12-1-QData-Editor/</id>
-    <published>2021-12-01T05:01:51.000Z</published>
-    <updated>2022-06-29T14:45:04.348Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;项目概述&quot;&gt;&lt;a href=&quot;#项目概述&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Tools" scheme="http://example.com/categories/Tools/"/>
-    
-    
-    <category term="wpf" scheme="http://example.com/tags/wpf/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AI编辑器</title>
-    <link href="http://example.com/2021/08/20/2021-8-20-AITemplateEditor/"/>
-    <id>http://example.com/2021/08/20/2021-8-20-AITemplateEditor/</id>
-    <published>2021-08-20T04:55:42.000Z</published>
-    <updated>2022-06-29T14:36:51.043Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这是我们项目之前用于编辑AI的工具，用wpf开发。编辑器版本较为古老缺少迭代，使用的体量却越来越大(AI节点就有几百个，AI树更是有几千多个)，因此对编辑器进行了较大幅的迭代优化。&lt;/p&gt;
-&lt;h4 id=&quot;结构优化&quot;&gt;&lt;a href=&quot;#结构优化&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Tools" scheme="http://example.com/categories/Tools/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>当我们在说沉浸感时，我们到底说的是什么？</title>

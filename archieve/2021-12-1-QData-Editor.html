@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Tag: wpf | Slakijng</title>
+  <title itemprop="name">服务器数据实时查询修改工具 | Slakijng</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -195,72 +195,45 @@
   </div>
 </header>
 
-      
-<div class="pattern-center-blank"></div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img src="" data-src="wpf.img" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
-  </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title">wpf</h1>
-  </header>
-</div>
-<div id="content" class="site-content">
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-      <span> 出版时间: <span>
-
-  <!-- 首页默认取最最新文章集 -->
+        <div class="pattern-center-blank"></div>
   
-    
-<article  class="post post-list-thumb post-list-thumb-left"  class="post post-list-thumb" itemscope="" itemtype="https://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/12/01/2021-12-1-QData-Editor/">
-      <img class="lazyload" onerror="imgError(this,3)" src="" data-src="/assets/img/common/qdata.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-12-1 13:12</div>
-      <a href="/2021/12/01/2021-12-1-QData-Editor/" class="post-title">
-        <h3>服务器数据实时查询修改工具</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/wpf/">wpf<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/Tools/">Tools</a>
-          
-        </span>
+    <div class="pattern-center ">
+      <div class="pattern-attachment-img">
+        <img src="" data-src="/assets/img/common/qdata.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
       </div>
-      <div class="float-content">
-        <p></p>
-        <div class="post-bottom">
-          <a href="/2021/12/01/2021-12-1-QData-Editor/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
+      <header class="pattern-header ">
+        <h1 class="entry-title">
+        </h1>
+      </header>
     </div>
-  </div>
-</article>
   
+  <div id="content" class="site-content">
+    <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
+      <h4 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h4><p>我们项目绝大部分数据都存在表格里，一个数据要在游戏中生效需要编辑后走一遍导表流程，不仅过程繁长，是否已经生效都经常处于薛定谔状态。因此我们希望有一个可以快速查询服务器数据的工具，再这之上进一步拓展为可以快速修改服务器数据。</p>
+<h4 id="设计思路"><a href="#设计思路" class="headerlink" title="设计思路"></a>设计思路</h4><p>我们项目的reload函数可以在导表后重新加载数据并在游戏中生效，同时我们每个游戏数据data文件都会对应一个def文件，记录了这个data是由哪(些)个excel表格文件导表而来，每个字段分别被映射到哪个新的字段上。由于大部分data在服务器中是以dict形式存放的，我们只需要获取行ID，就可以索引到服务器的这条数据，对他进行修改查询操作。</p>
+<p>实际制作遇到几个问题：</p>
+<ol>
+<li>def文件是会一直更新的，我们需要一个在线的接口来获取最新的def文件内容（同时在线内容都是不可靠的，本地也要留一个缓存）</li>
+<li>存放在dict的数据并不是每一个字段都有。我们的表动辄就是几百个表头，每条数据都把所有字段都存下来是不可能的。因此需要解析def文件，并从中读取该表头的类型，在reload的时候将值正确解析并加进去。</li>
+<li>导表规则非常复杂。有些简单的多个字段合成一个字段的，策划看一下新字段名也大概知道怎么回事了。其他几张表拼在一起的或者规则很特殊的只能特殊处理。</li>
+<li><del>不是以dict形式存放的数据，寄</del></li>
+</ol>
 
-
-      <div class="clearer">
-      </div>
-    </main>
-    <!--  -->
-    
-  </div>
+      <!-- .entry-content -->
+      
+      <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+      <footer class="post-footer">
+        <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+        <div class="post-tags">
+        </div>
+        <div class="post-share">
+          <div class="social-share sharehidden share-component"></div>
+          <i class="iconfont show-share icon-forward"></i>
+        </div>
+      </footer><!-- .entry-footer -->
+    </article>
+      <!-- #post-## -->
+  </div><!-- #primary -->
 </div>
     </div>    
     <div class="ins-search">
